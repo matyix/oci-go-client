@@ -1,0 +1,15 @@
+# SecurityProtocolPostRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Description** | **string** | Description of the security protocol. | [optional] [default to null]
+**DstPortSet** | **[]string** | Enter a list of port numbers or port range strings. Traffic is enabled by a security rule when a packet&#39;s destination port matches the ports specified here.&lt;p&gt;For TCP, SCTP, and UDP, each port is a destination transport port, between 0 and 65535, inclusive. For ICMP, each port is an ICMP type, between 0 and 255, inclusive.&lt;p&gt;If no destination ports are specified, all destination ports or ICMP types are allowed. | [optional] [default to null]
+**IpProtocol** | **string** | The protocol used in the data portion of the IP datagram. Specify one of the permitted values or enter a number in the range 0 - 254 to represent the protocol that you want to specify. See &lt;a target&#x3D;\&quot;_blank\&quot; href&#x3D;\&quot;http://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml\&quot;&gt;Assigned Internet Protocol Numbers&lt;/a&gt;. Permitted values are: &lt;code&gt;tcp&lt;/code&gt;, &lt;code&gt;udp&lt;/code&gt;, &lt;code&gt;icmp&lt;/code&gt;, &lt;code&gt;igmp&lt;/code&gt;, &lt;code&gt;ipip&lt;/code&gt;, &lt;code&gt;rdp&lt;/code&gt;, &lt;code&gt;esp&lt;/code&gt;, &lt;code&gt;ah&lt;/code&gt;, &lt;code&gt;gre&lt;/code&gt;, &lt;code&gt;icmpv6&lt;/code&gt;, &lt;code&gt;ospf&lt;/code&gt;, &lt;code&gt;pim&lt;/code&gt;, &lt;code&gt;sctp&lt;/code&gt;, &lt;code&gt;mplsip&lt;/code&gt;, &lt;code&gt;all&lt;/code&gt;.&lt;p&gt;Traffic is enabled by a security rule when the protocol in the packet matches the protocol specified here. If no protocol is specified, all protocols are allowed. | [optional] [default to null]
+**Name** | **string** | The three-part name of the Ip address association (/Compute-identity_domain/user/object).&lt;p&gt;Object names can contain only alphanumeric characters, hyphens, underscores, and periods. Object names are case-sensitive. When you specify the object name, ensure that an object of the same type and with the same name doesn&#39;t already exist. If such an object already exists, another object of the same type and with the same name won&#39;t be created and the existing object won&#39;t be updated. | [default to null]
+**SrcPortSet** | **[]string** | Enter a list of port numbers or port range strings. Traffic is enabled by a security rule when a packet&#39;s source port matches the ports specified here.&lt;p&gt;For TCP, SCTP, and UDP, each port is a source transport port, between 0 and 65535, inclusive. For ICMP, each port is an ICMP type, between 0 and 255, inclusive.&lt;p&gt;If no source ports are specified, all source ports or ICMP types are allowed. | [optional] [default to null]
+**Tags** | **[]string** | Strings that you can use to tag the security protocol. | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
